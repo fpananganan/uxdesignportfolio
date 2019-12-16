@@ -1,0 +1,64 @@
+/* -- Core Styles --*/
+
+.social-icons {
+    font-size: 46px; 
+  }
+  
+  /*effect-underline*/
+  .effect-underline:after {
+    content: '';
+    color: #3046C5;
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    height: 1em;
+    width: 100%;
+    border-bottom: 1px solid;
+    margin-top: 10px;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale(0, 1);
+    transform: scale(0, 1); }
+  
+  /* Blinking Cursur */
+  .blinking-cursor {
+    font-weight: 100;
+    font-size: 30px;
+    color: #2E3D48;
+    -webkit-animation: 1s blink step-end infinite;
+    -moz-animation: 1s blink step-end infinite;
+    -ms-animation: 1s blink step-end infinite;
+    -o-animation: 1s blink step-end infinite;
+    animation: 1s blink step-end infinite; }
+  
+  @keyframes "blink" {
+    from, to {
+      color: transparent; }
+    50% {
+      color: #0275d8; } }
+  
+  @-moz-keyframes blink {
+    from, to {
+      color: transparent; }
+    50% {
+      color: #0275d8; } }
+  
+  @-webkit-keyframes "blink" {
+    from, to {
+      color: transparent; }
+    50% {
+      color: #0275d8; } }
+  
+  @-ms-keyframes "blink" {
+    from, to {
+      color: transparent; }
+    50% {
+      color: #0275d8; } }
+  
+  @-o-keyframes "blink" {
+    from, to {
+      color: transparent; }
+    50% {
+      color: #0275d8; } }
+  

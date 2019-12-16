@@ -1,5 +1,5 @@
 import React, { Component } from 'react'; 
-import { Collapse, Nav, Navbar, NavbarToggler, NavItem, NavbarBrand } from 'reactstrap'; 
+import { Collapse, Nav, Navbar, NavbarToggler, NavItem, NavbarBrand } from 'reactstrap';  
 import { NavLink } from 'react-router-dom'; 
 
 class Header extends Component {
@@ -29,17 +29,17 @@ class Header extends Component {
                             <Collapse isOpen={this.state.isNavOpen} navbar>
                                 <Nav navbar className="d-flex align-items-end navbar-nav ml-md-auto">
                                     <NavItem>
-                                        <NavLink className="nav-link text-secondary" to="/About">
+                                        <NavLink className="nav-link text-secondary" to='/about'>
                                             About
                                         </NavLink>
                                     </NavItem>
                                     <NavItem>
-                                        <NavLink className="nav-link text-secondary" to="/">
+                                        <NavLink className="nav-link text-secondary" to='/'>
                                             Projects
                                         </NavLink>
                                     </NavItem>
                                     <NavItem>
-                                        <NavLink className="nav-link text-secondary" to="/">
+                                        <NavLink className="nav-link text-secondary" to='/'>
                                             Contact
                                         </NavLink>
                                     </NavItem>
