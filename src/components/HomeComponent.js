@@ -1,5 +1,5 @@
 import React, { Component } from 'react'; 
-import './Styles.css'; 
+import styles from './Styles.module.css'
 
 class Home extends Component {
     constructor(props) {
@@ -17,7 +17,7 @@ class Home extends Component {
                                     <h3> <span className="text-primary"> Hello. </span> <span className="text-secondary"> I'm Rico, a Product Designer from Las Vegas. </span> </h3>
                                 </div>
                                 <div className="pt-3 mb-2" />
-                                <h4 className="text-md-center"> <span className="text-secondary"> I enjoy creating thoughtful, engaging, and memorable <br /> experiences expressed through user-centric design... </span> <span className="blinking-cursor text-primary"> | </span> </h4>
+                                <h4 className="text-md-center"> <span className="text-secondary"> I enjoy creating thoughtful, engaging, and memorable <br /> experiences expressed through user-centric design... </span> <span className={styles.blinkingCursor}> | </span> </h4>
                             </div>
                         </div>
                     </div>
