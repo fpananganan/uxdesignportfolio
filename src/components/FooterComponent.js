@@ -1,4 +1,5 @@
 import React, { Component } from 'react'; 
+import styles from './Styles.module.css'; 
 
 class Footer extends Component {
     constructor(props) {
@@ -15,7 +16,7 @@ class Footer extends Component {
                         <div className="col-sm-6 mx-auto text-center">
                             <h4 className="text-secondary text-md-center"> Let's Connect! </h4>
                             <p className="text-secondary text-md-center"> Thanks for stopping by. Hopefuly you enjoyed what you saw. If you would like to know more about my work, please drop me a line or let's chat over a cup of coffee!</p>
-                            <div className="social-icons">
+                            <div className={styles.socialIcons}>
                                 <a className="email icon" a href="/">
                                     <i className="fa fa-envelope-o mr-2 mt-3 text-secondary" aria-hidden="true" />
                                 </a>

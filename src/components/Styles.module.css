@@ -1,8 +1,8 @@
 /* -- Core Styles --*/
 
-.social-icons {
-    font-size: 46px; 
-  }
+.socialIcons {
+  font-size: 46px; 
+}
   
   /*effect-underline*/
   .effect-underline:after {
@@ -31,6 +31,36 @@
     -ms-animation: 1s blink step-end infinite;
     -o-animation: 1s blink step-end infinite;
     animation: 1s blink step-end infinite; }
+
+    @keyframes "blink" {
+      from, to {
+        color: transparent; }
+      50% {
+        color: #0275d8; } }
+    
+    @-moz-keyframes blink {
+      from, to {
+        color: transparent; }
+      50% {
+        color: #0275d8; } }
+    
+    @-webkit-keyframes "blink" {
+      from, to {
+        color: transparent; }
+      50% {
+        color: #0275d8; } }
+    
+    @-ms-keyframes "blink" {
+      from, to {
+        color: transparent; }
+      50% {
+        color: #0275d8; } }
+    
+    @-o-keyframes "blink" {
+      from, to {
+        color: transparent; }
+      50% {
+        color: #0275d8; } }
   
   
   
