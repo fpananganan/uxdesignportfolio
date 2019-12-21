@@ -13,7 +13,7 @@ class Header extends Component {
 
         this.toggleNav = this.toggleNav.bind(this); 
         this.toggleModal = this.toggleModal.bind(this); 
-        this.handleLogin = this.handleLogin.bind(this);
+        this.handleContact = this.handleContact.bind(this);
     }
 
     toggleNav() {
@@ -28,7 +28,7 @@ class Header extends Component {
         }); 
     }
     
-    handleLogin(event) {
+    handleContact(event) {
         this.toggleModal();
         event.preventDefault();
     }
@@ -54,7 +54,7 @@ class Header extends Component {
                                         </NavLink>
                                     </NavItem>
                                     <NavItem>
-                                        <NavLink className="nav-link text-secondary" to={this.toggleModal}>
+                                        <NavLink className="nav-link text-secondary" to onClick={this.toggleModal}>
                                             Contact
                                         </NavLink>
                                     </NavItem>
@@ -68,17 +68,17 @@ class Header extends Component {
                             <ModalBody>
                                 <Form onSubmit={this.handleModal}>
                                     <FormGroup>
-                                        <Label htmlFor="username"> What's Your Name </Label>
+                                        <Label htmlFor="username"> Name </Label>
                                         <Input type="text" id="username" name="username"
                                             innerRef={input => this.username = input} />
                                     </FormGroup>
                                     <FormGroup>
-                                        <Label htmlFor="email"> Email Address </Label>
+                                        <Label htmlFor="email"> Email </Label>
                                         <Input type="text" id="email" name="email"
                                             innerRef={input => this.email = input} />
                                     </FormGroup>
                                     <FormGroup>
-                                        <Label htmlfor="subject"> Subject Title </Label>
+                                        <Label htmlfor="subject"> Subject </Label>
                                         <Input type="text" id="subject" name="subject"
                                             innerRef={input => this.subject = input} />
                                     </FormGroup>
